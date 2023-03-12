@@ -10,8 +10,12 @@ console.log(`1. Рішення з використанням циклу: ${sumCy
 
 
 function sumRec(n) {
-    if (n == 1) return 1;
-    return n + sumRec(n - 1);
+    if (n === 1) {
+        return 1;
+    }
+    else {
+        return n + sumRec(n - 1);
+    }
 }
 
 console.log(`2. Рішення з використанням рекурсії: ${sumRec(100)}`);
